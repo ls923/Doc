@@ -5,13 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>ECMAScript 6 1.let &amp; const 命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://ls923.github.io/Doc/index.html">
+  <meta name="description" content="ES6ES6 泛指JavaScript 语言的下一个版本 Babel 转码器可将ES6 代码转为 ES5 代码  let 和 const 命令1. let 命令基本用法声明变量， 用法类似 var，但是所声明的变量，只在 let 命令所在的代码块内有效。 123456&amp;#123;  let a &#x3D; 10;  var b &#x3D; 1;&amp;#125;console.log(b); &#x2F;&#x2F; 1console.l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ECMAScript 6 1.let &amp; const 命令">
+<meta property="og:url" content="https://ls923.github.io/Doc/2021/07/20/ECMAScript-6-1-let-const-%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ES6ES6 泛指JavaScript 语言的下一个版本 Babel 转码器可将ES6 代码转为 ES5 代码  let 和 const 命令1. let 命令基本用法声明变量， 用法类似 var，但是所声明的变量，只在 let 命令所在的代码块内有效。 123456&amp;#123;  let a &#x3D; 10;  var b &#x3D; 1;&amp;#125;console.log(b); &#x2F;&#x2F; 1console.l">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-20T02:35:26.000Z">
+<meta property="article:modified_time" content="2021-07-20T02:35:39.481Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-ECMAScript-6-1-let-const-命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ECMAScript-6-1-let-const-命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/Doc/2021/07/20/ECMAScript-6-1-let-const-%E5%91%BD%E4%BB%A4/" class="article-date">
   <time datetime="2021-07-20T02:35:26.000Z" itemprop="datePublished">2021-07-20</time>
@@ -77,8 +79,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Doc/2021/07/20/ECMAScript-6-1-let-const-%E5%91%BD%E4%BB%A4/">ECMAScript 6 1.let &amp; const 命令</a>
+    <h1 class="article-title" itemprop="name">
+      ECMAScript 6 1.let &amp; const 命令
     </h1>
   
 
@@ -205,112 +207,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-CocosApi" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Doc/2021/07/20/CocosApi/" class="article-date">
-  <time datetime="2021-07-20T02:33:53.000Z" itemprop="datePublished">2021-07-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/Doc/2021/07/20/CocosApi/">CocosApi</a>
-    </h1>
+    <a href="/Doc/2021/07/20/CocosApi/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CocosApi</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="Cocos-Creator-动作-Action-系统"><a href="#Cocos-Creator-动作-Action-系统" class="headerlink" title="Cocos Creator 动作(Action)系统"></a>Cocos Creator 动作(Action)系统</h3><p><strong>动作</strong> 指的是 <strong>节点的位移，旋转和缩放</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cc.moveBy = function (duration, deltaPos, deltaY) &#123;</span><br><span class="line">    return new cc.MoveBy(duration, deltaPos, deltaY);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h4 id="moveBy"><a href="#moveBy" class="headerlink" title="moveBy()"></a>moveBy()</h4><p>方法 moveBy 一共可以传入三个参数.</p>
-<p>第三个参数是 Number 类型的 Y 坐标;</p>
-<p>第二个参数是可以传入两种类型的，第一种是 Number 类型，第二种才是 Vec2 类型.<br>如果我们在这里传入的是 Number 类型，那么默认这个参数就是 X 坐标，此时就要填第三个参数，为 Y 坐标。</p>
-<p>第二个参数传入使用 cc.v2 方法构建的 Vec2 类型对象，这个类型表示的是一个坐标，即有 X 坐标也有 Y 坐标，因此不需要再传入第三个参数！</p>
-<p>传入的 X、Y 坐标都是相对于节点当前的坐标位置，而不是整个坐标系的绝对坐标。</p>
-<ul>
-<li>instanceof 实例<h4 id="ActionInterval-类型"><a href="#ActionInterval-类型" class="headerlink" title="ActionInterval 类型"></a>ActionInterval 类型</h4>ActionInterval 对象在Cocos中表示时间间隔动作的类，这种动作在一定时间内完成。</li>
-<li>easing</li>
-</ul>
-<p>ActionInterval类下的一个方法 类似 css 中 transition </p>
-<h4 id="update"><a href="#update" class="headerlink" title="update"></a>update</h4><p><strong>update</strong> 在场景加载后就会每帧调用一次<br><strong>onload</strong> 方法会在场景加载后</p>
-<p>???</p>
-<h4 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h4>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ls923.github.io/Doc/2021/07/20/CocosApi/" data-id="ckrbg37g50001i8ljfxyx1vjl" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Doc/tags/study/" rel="tag">study</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/Doc/2021/07/20/hello-world/" class="article-date">
-  <time datetime="2021-07-20T01:59:38.746Z" itemprop="datePublished">2021-07-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/Doc/2021/07/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ls923.github.io/Doc/2021/07/20/hello-world/" data-id="ckrbg37gb0004i8ljd0otd42p" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
